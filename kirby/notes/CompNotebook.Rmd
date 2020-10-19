@@ -1,0 +1,26 @@
+---
+title: "Computational Lab Notebook"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+summary(cars)
+```
+## Oct 16, 2020
+
+*Goal:* Understand what is actually happening in class
+
+*worked:* re watch the class videos
+
+*did not work:* reading only the things off the website only.
+
+## Oct 19, 2020
+
+Trying revision management for the first time
+
+

@@ -1,0 +1,26 @@
+Problems for HW 5
+temp_data <- meteo_tidy_ghcnd(stationid = "USW00003145", var = c("tmin", "tmax"))
+using cached file: /home/rstudio-user/.cache/R/noaa_ghcnd/USW00003145.dly
+date created (size, mb): 2020-10-12 15:44:42 (0.008)
+file min/max dates: Inf / -Inf
+Error: Can't extract columns that don't exist.
+x Column `key` doesn't exist.
+Run `rlang::last_error()` to see where the error occurred.
+
+I Cant get the data from the orginal class to be able to merge for the new class/ I cant actaully do the lesson for this due to not being able to get the data but Ive watched the videos like 4 times
+
+also How do I pull the data/download the data for USW00003145. Upload it to your data directory. from that specific item. 
+Would I just download.file(link and destile), read.csv then use ncdc_locs?? maybe download.file("") write.csv???
+
+To merge I would_ 
+merge(by old data by new data) or would it be merge(by.old data by.new data)
+
+to drop rows, filter
+calc_f %>%
+  filter(tmin  ) %>%
+  filter(tmax )
+  or could you use data[complete.cases(data)]
+
+
+plotting merge data:
+ggplot(mereged data, mapping = aes(x = tmin, y = hindfoot_length)) + geom_point(aes(alpha = 0.1, color = sex)) + facet_grid(cols  = vars(species_id)) + geom_smooth(aes(group=sex), method='lm')
